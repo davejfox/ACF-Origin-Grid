@@ -1,0 +1,692 @@
+[
+    {
+        "key": "group_59aeb943becf3",
+        "title": "Rows & Columns",
+        "fields": [
+            {
+                "key": "field_59aeb9690535f",
+                "label": "Row",
+                "name": "row",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_59aec043a247a",
+                        "label": "Column",
+                        "name": "column",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Column",
+                        "sub_fields": [
+                            {
+                                "key": "field_59aebb2c71046",
+                                "label": "Size",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "The column size at each grid breakpoint.",
+                                "new_lines": "",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_59aeb97d05360",
+                                "label": "Large",
+                                "name": "size_large",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "12": "12",
+                                    "11": "11",
+                                    "10": "10",
+                                    "9": "9",
+                                    "8": "8",
+                                    "7": "7",
+                                    "6": "6",
+                                    "5": "5",
+                                    "4": "4",
+                                    "3": "3",
+                                    "2": "2",
+                                    "1": "1"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_59aeb99b05361",
+                                "label": "Medium",
+                                "name": "size_medium",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "12": "12",
+                                    "11": "11",
+                                    "10": "10",
+                                    "9": "9",
+                                    "8": "8",
+                                    "7": "7",
+                                    "6": "6",
+                                    "5": "5",
+                                    "4": "4",
+                                    "3": "3",
+                                    "2": "2",
+                                    "1": "1"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_59aeb9af05362",
+                                "label": "Small",
+                                "name": "size_small",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "12": "12",
+                                    "11": "11",
+                                    "10": "10",
+                                    "9": "9",
+                                    "8": "8",
+                                    "7": "7",
+                                    "6": "6",
+                                    "5": "5",
+                                    "4": "4",
+                                    "3": "3",
+                                    "2": "2",
+                                    "1": "1"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_59aeb9b805363",
+                                "label": "xSmall",
+                                "name": "size_xsmall",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "25",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "12": "12",
+                                    "11": "11",
+                                    "10": "10",
+                                    "9": "9",
+                                    "8": "8",
+                                    "7": "7",
+                                    "6": "6",
+                                    "5": "5",
+                                    "4": "4",
+                                    "3": "3",
+                                    "2": "2",
+                                    "1": "1"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_59aebd6aede6d",
+                                "label": "Centering \/ Uncentering",
+                                "name": "centering_uncentering",
+                                "type": "true_false",
+                                "instructions": "Each column can be centered or uncentered at each breakpoint.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            },
+                            {
+                                "key": "field_59aec5746ddc5",
+                                "label": "Center \/ Uncenter",
+                                "name": "center_uncenter",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_59aebd6aede6d",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_59aebde07c88b",
+                                        "label": "Large",
+                                        "name": "cu_large",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "centered": "Centered",
+                                            "uncentered": "Uncentered"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aebdf57c88c",
+                                        "label": "Medium",
+                                        "name": "cu_medium",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "centered": "Centered",
+                                            "uncentered": "Uncentered"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aebe0c7c88d",
+                                        "label": "Small",
+                                        "name": "cu_small",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "centered": "Centered",
+                                            "uncentered": "Uncentered"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aebe187c88e",
+                                        "label": "xSmall",
+                                        "name": "cu_xsmall",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "centered": "Centered",
+                                            "uncentered": "Uncentered"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_59aecd992a641",
+                                "label": "Column Push \/ Pull",
+                                "name": "column_push_pull",
+                                "type": "true_false",
+                                "instructions": "Each column can be offset by push or pull. This can be especially useful to re-order columns at varying breakpoints.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            },
+                            {
+                                "key": "field_59aecdc82a642",
+                                "label": "Push \/ Pull",
+                                "name": "push_pull",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_59aecd992a641",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_59aecdc82a643",
+                                        "label": "Large",
+                                        "name": "pp_large",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "push-1": "push-1",
+                                            "push-2": "push-2",
+                                            "push-3": "push-3",
+                                            "push-4": "push-4",
+                                            "push-5": "push-5",
+                                            "push-6": "push-6",
+                                            "push-7": "push-7",
+                                            "push-8": "push-8",
+                                            "push-9": "push-9",
+                                            "push-10": "push-10",
+                                            "push-11": "push-11",
+                                            "push-12": "push-12",
+                                            "pull-1": "pull-1",
+                                            "pull-2": "pull-2",
+                                            "pull-3": "pull-3",
+                                            "pull-4": "pull-4",
+                                            "pull-5": "pull-5",
+                                            "pull-6": "pull-6",
+                                            "pull-7": "pull-7",
+                                            "pull-8": "pull-8",
+                                            "pull-9": "pull-9",
+                                            "pull-10": "pull-10",
+                                            "pull-11": "pull-11",
+                                            "pull-12": "pull-12"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aecdc82a644",
+                                        "label": "Medium",
+                                        "name": "pp_medium",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "push-1": "push-1",
+                                            "push-2": "push-2",
+                                            "push-3": "push-3",
+                                            "push-4": "push-4",
+                                            "push-5": "push-5",
+                                            "push-6": "push-6",
+                                            "push-7": "push-7",
+                                            "push-8": "push-8",
+                                            "push-9": "push-9",
+                                            "push-10": "push-10",
+                                            "push-11": "push-11",
+                                            "push-12": "push-12",
+                                            "pull-1": "pull-1",
+                                            "pull-2": "pull-2",
+                                            "pull-3": "pull-3",
+                                            "pull-4": "pull-4",
+                                            "pull-5": "pull-5",
+                                            "pull-6": "pull-6",
+                                            "pull-7": "pull-7",
+                                            "pull-8": "pull-8",
+                                            "pull-9": "pull-9",
+                                            "pull-10": "pull-10",
+                                            "pull-11": "pull-11",
+                                            "pull-12": "pull-12"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aecdc82a645",
+                                        "label": "Small",
+                                        "name": "pp_small",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "push-1": "push-1",
+                                            "push-2": "push-2",
+                                            "push-3": "push-3",
+                                            "push-4": "push-4",
+                                            "push-5": "push-5",
+                                            "push-6": "push-6",
+                                            "push-7": "push-7",
+                                            "push-8": "push-8",
+                                            "push-9": "push-9",
+                                            "push-10": "push-10",
+                                            "push-11": "push-11",
+                                            "push-12": "push-12",
+                                            "pull-1": "pull-1",
+                                            "pull-2": "pull-2",
+                                            "pull-3": "pull-3",
+                                            "pull-4": "pull-4",
+                                            "pull-5": "pull-5",
+                                            "pull-6": "pull-6",
+                                            "pull-7": "pull-7",
+                                            "pull-8": "pull-8",
+                                            "pull-9": "pull-9",
+                                            "pull-10": "pull-10",
+                                            "pull-11": "pull-11",
+                                            "pull-12": "pull-12"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_59aecdc82a646",
+                                        "label": "xSmall",
+                                        "name": "pp_xsmall",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "Regular Position": "Regular Position",
+                                            "push-1": "push-1",
+                                            "push-2": "push-2",
+                                            "push-3": "push-3",
+                                            "push-4": "push-4",
+                                            "push-5": "push-5",
+                                            "push-6": "push-6",
+                                            "push-7": "push-7",
+                                            "push-8": "push-8",
+                                            "push-9": "push-9",
+                                            "push-10": "push-10",
+                                            "push-11": "push-11",
+                                            "push-12": "push-12",
+                                            "pull-1": "pull-1",
+                                            "pull-2": "pull-2",
+                                            "pull-3": "pull-3",
+                                            "pull-4": "pull-4",
+                                            "pull-5": "pull-5",
+                                            "pull-6": "pull-6",
+                                            "pull-7": "pull-7",
+                                            "pull-8": "pull-8",
+                                            "pull-9": "pull-9",
+                                            "pull-10": "pull-10",
+                                            "pull-11": "pull-11",
+                                            "pull-12": "pull-12"
+                                        },
+                                        "default_value": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_59aeb9e5b42b7",
+                                "label": "Column Content",
+                                "name": "column_content",
+                                "type": "flexible_content",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layouts": {
+                                    "59aeb9ece15dd": {
+                                        "key": "59aeb9ece15dd",
+                                        "name": "text",
+                                        "label": "Text",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_59aeb9feb42b8",
+                                                "label": "Text",
+                                                "name": "text",
+                                                "type": "wysiwyg",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "default_value": "",
+                                                "tabs": "all",
+                                                "toolbar": "full",
+                                                "media_upload": 1,
+                                                "delay": 0
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    "59aeba0fb42b9": {
+                                        "key": "59aeba0fb42b9",
+                                        "name": "gallery",
+                                        "label": "Gallery",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_59aeba14b42ba",
+                                                "label": "Image",
+                                                "name": "image",
+                                                "type": "image",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": "array",
+                                                "preview_size": "thumbnail",
+                                                "library": "all",
+                                                "min_width": "",
+                                                "min_height": "",
+                                                "min_size": "",
+                                                "max_width": "",
+                                                "max_height": "",
+                                                "max_size": "",
+                                                "mime_types": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    }
+                                },
+                                "button_label": "Add Column Content",
+                                "min": "",
+                                "max": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "590"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]
