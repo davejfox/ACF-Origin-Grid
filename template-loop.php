@@ -1,77 +1,46 @@
 <?php
 function columnClasses() {
 
-	if( get_sub_field("centering_uncentering") ):
+	$breakpoints = array("large", "medium", "small", "xsmall");
 
-		if( have_rows("center_uncenter") ): 
+	foreach ($breakpoints as &$breakpoint) {
+		
+		$columnNumber = get_sub_field("breakpoint_" . $breakpoint);
 
-			while( have_rows("center_uncenter") ): the_row();
-	
-				$largeCenterUncenter = get_sub_field("cu_large");
-				$mediumCenterUncenter = get_sub_field("cu_medium");
-				$smallCenterUncenter = get_sub_field("cu_small");
-				$xsmallCenterUncenter = get_sub_field("cu_xsmall");
+		echo " " . $breakpoint . "-" . $columnNumber;
 
-				if ($largeCenterUncenter != "Regular Position") {
-					echo " large-" . $largeCenterUncenter;
-				}
+		if( get_sub_field("centering_uncentering") ):
 
-				if ($mediumCenterUncenter != "Regular Position") {
-					echo " medium-" . $mediumCenterUncenter;
-				}
+			if( have_rows("center_uncenter") ): 
 
-				if ($smallCenterUncenter != "Regular Position") {
-					echo " small-" . $smallCenterUncenter;
-				}
+				while( have_rows("center_uncenter") ): the_row();
+		
+					$breakpointCenterUncenter = get_sub_field("cu_" . $breakpoint);
 
-				if ($xsmallCenterUncenter != "Regular Position") {
-					echo " xsmall-" . $xsmallCenterUncenter;
-				}
+					if ($breakpointCenterUncenter != "Regular Position") {
+						echo " " . $breakpoint . "-" . $breakpointCenterUncenter;
+					}
 
-			endwhile;
+				endwhile;
+			endif;
 		endif;
-	endif;
 
-	if( get_sub_field("column_push_pull") ):
+		if( get_sub_field("column_push_pull") ):
 
-		if( have_rows("push_pull") ): 
+			if( have_rows("push_pull") ): 
 
-			while( have_rows("push_pull") ): the_row();
-	
-				$largePushPull = get_sub_field("pp_large");
-				$mediumPushPull = get_sub_field("pp_medium");
-				$smallPushPull = get_sub_field("pp_small");
-				$xsmallPushPull = get_sub_field("pp_xsmall");
+				while( have_rows("push_pull") ): the_row();
+		
+					$breakpointPushPull = get_sub_field("pp_" . $breakpoint);
 
-				if ($largePushPull != "Regular Position") {
-					echo " large-" . $largePushPull;
-				}
+					if ($breakpointPushPull != "Regular Position") {
+						echo " " . $breakpoint . "-" . $breakpointPushPull;
+					}
 
-				if ($mediumPushPull != "Regular Position") {
-					echo " medium-" . $mediumPushPull;
-				}
-
-				if ($smallPushPull != "Regular Position") {
-					echo " small-" . $smallPushPull;
-				}
-
-				if ($xsmallPushPull != "Regular Position") {
-					echo " xsmall-" . $xsmallPushPull;
-				}
-
-			endwhile;
+				endwhile;
+			endif;
 		endif;
-	endif;
-
-	$large = get_sub_field("size_large");
-	$medium = get_sub_field("size_medium");
-	$small = get_sub_field("size_small");
-	$xsmall = get_sub_field("size_xsmall");
-
-	echo " large-" . $large;
-	echo " medium-" . $medium;
-	echo " small-" . $small;
-	echo " xsmall-" . $xsmall;
+	}
 }
 ?>
 <section>
