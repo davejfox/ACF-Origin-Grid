@@ -11,7 +11,11 @@
 
 // Place this function in your functions.php file.
 function columnClasses() {
-
+	/* 
+		These are the names of the default breakpoints in Origin.
+		If you add more breakpoints in the CSS, you can add them 
+		here too.
+	*/
 	$breakpoints = array("large", "medium", "small", "xsmall");
 
 	foreach ($breakpoints as &$breakpoint) {
