@@ -1,11 +1,22 @@
 <?php
+//----------------------------------------------------------------
+//  ACF ORIGIN ROWS & COLUMNS
+//  For use with the excellent ACF plugin by Elliot Condon.
+//  For information on ACF see www.advancedcustomfields.com 
+// 
+//  https://github.com/davejfox/ACF-Origin-Grid
+//
+//  By Dave J. Fox - twitter.com/davejfox || github.com/davejfox
+//----------------------------------------------------------------
+
+// Place this function in your functions.php file.
 function columnClasses() {
 
 	$breakpoints = array("large", "medium", "small", "xsmall");
 
 	foreach ($breakpoints as &$breakpoint) {
 		
-		$columnNumber = get_sub_field("breakpoint_" . $breakpoint);
+		$columnNumber = get_sub_field("size_" . $breakpoint);
 
 		echo " " . $breakpoint . "-" . $columnNumber;
 
@@ -42,6 +53,12 @@ function columnClasses() {
 		endif;
 	}
 }
+
+// End of function.
+?>
+
+<?php 
+// Below is an example of how this can be used. You can place the loops of your own flexible content where indicated.
 ?>
 <section>
 	<?php 
